@@ -6,7 +6,7 @@
   "icon": "https://puui.qpic.cn/vupload/0/common_logo_square.png/0",
   "author": "liumingye <liumingye2015@gmail.com>",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "dist/*"
   ],
@@ -22,7 +22,8 @@
     "less": "^4.1.2",
     "path": "^0.12.7",
     "typescript": "^4.6.0",
-    "vite": "^2.8.6"
+    "vite": "^2.8.6",
+    "webmini-types": "^1.0.7"
   },
   "main": "dist/index.js",
   "repository": {

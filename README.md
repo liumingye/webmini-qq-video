@@ -1,1 +1,1 @@
-# webmini-bilibili
+# webmini-qq-video
