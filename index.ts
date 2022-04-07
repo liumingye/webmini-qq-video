@@ -6,6 +6,7 @@ import type {
   UrlChangeData,
   Replace,
 } from "webmini-types";
+import { getPartOfQQ } from "./utils";
 
 export class extension implements PluginMinimalData {
   constructor(public api: PluginApiParameters) {}
@@ -74,11 +75,18 @@ export class extension implements PluginMinimalData {
         });
 
         webContents.goBack();
+      } else if (url.hostname === "v.qq.com") {
+        getPartOfQQ(this.api.application, this.api.net, cid, vid);
       }
       this.api.application.mainWindow?.send("setAppState", "autoHideBar", true);
+      return;
     }
 
-    this.api.application.mainWindow?.send("setAppState", "disablePartButton", true);
+    this.api.application.mainWindow?.send(
+      "setAppState",
+      "disablePartButton",
+      true
+    );
     this.api.application.selectPartWindow?.send("update-part", null);
   }
 }

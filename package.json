@@ -6,7 +6,7 @@
   "icon": "https://puui.qpic.cn/vupload/0/common_logo_square.png/0",
   "author": "liumingye <liumingye2015@gmail.com>",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "files": [
     "dist/*"
   ],
